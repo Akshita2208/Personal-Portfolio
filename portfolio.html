@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family : cursive;
+        }
+        body {
+         padding-top: 120px;
+        }
+
+
+        *{
+            margin :0;
+            padding :0;
+
+        }
+        body{
+            background-color: rgb(225, 225, 246);
+            color: #000000;
+        }
+
+        nav {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             z-index: 9999;
+        }
+
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(193, 193, 227);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 30px
+        }
+
+         nav ul li a{
+            text-decoration: none;
+            color: rgb(19, 5, 64);
+            font-size: 2rem;
+         }
+
+          nav ul li a:hover{
+            color:rgb(22, 22, 237);
+            font-size: 2.2rem;
+           
+         }
+
+         main hr{
+              border:0;
+              background:rgb(151, 151, 193);
+              height: 3px;
+              margin:40px;
+         }
+
+
+        .firstSection{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0px;
+            gap: 40px;
+             
+        }
+
+        .firstSection > div{
+            width:40%;
+
+        }
+
+        .letfWrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .leftWrapper p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .leftSection{
+            font-size: 2rem;
+            margin: 150px 0;
+            line-height: 1;
+        }
+
+        .leftSection > div{
+            margin-top: 5px;
+        }
+
+       
+
+        .rightSection{
+            
+            width: 34px;
+        }
+
+        .purple{
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        #element{
+            color: blueviolet;
+            font-weight: bold;
+
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            
+        }
+        .secondSection h2 {
+            font-size: 2rem;
+            color: rgb(19, 5, 64);
+            margin-bottom: 20px;
+        }
+         main hr {
+            border: 0;
+            background: rgb(151, 151, 193);
+            height: 3px;
+            margin: 60px 40px;
+        }
+        .left {
+                font-size: 2rem;
+                margin-bottom: 15px;
+                
+            }
+            
+
+         nav {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+
+         nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .secondSection {
+            max-width: 80vw;
+            margin: 40px auto;
+        }
+
+            .secondSection h2{
+                font-size: 2rem;
+                color: rgb(19,5,64);
+                margin: bottom 40px;
+                text-align: center;
+            }
+
+            .projectcard{
+                background: rgb(245, 242, 242);
+                border-radius: 15px;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease, box-shadow0.3s ease;
+            }
+
+            .projectcard:hover{
+                transform: translate(-5px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            }
+
+           
+
+            .projectcard h3{
+                column-rule-color: whitesmoke;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .projectcard p{
+                line-height: 1.6;
+                margin-bottom: 15px;
+                color: whitesmoke;
+
+            }
+
+            .projectcard {
+              position: relative;
+               overflow: hidden;
+              height: 300px; 
+             color: white;
+            }
+
+           .projectcard .project-img {
+              position: absolute;
+              top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+                object-fit: cover;
+              filter: brightness(40%); 
+             }
+
+               .projectcard h3,
+              .projectcard p,
+            .projectcard .techstack {
+             position: relative;
+              z-index: 2; 
+            }
+
+
+            .techstack{
+                color: whitesmoke;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            .contactSection {
+            max-width: 80vw;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contactSection h2 {
+            font-size: 2rem;
+            color: rgb(19, 5, 64);
+            margin-bottom: 15px;
+        }
+
+        .contact-intro {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            
+          
+        }
+
+        .contact-form textarea {
+            padding: 15px;
+            border: 2px solid rgb(193, 193, 227);
+            border-radius: 8px;
+            font-family: cursive;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: blueviolet;
+        }
+
+        .contact-form .rightSection img {
+             width: 300px;   
+            margin-left: 500px;
+            margin-top: -100px;
+        }
+
+
+        .btn-send {
+            background: blueviolet;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-family: cursive;
+            cursor: pointer;
+            align-self: flex-start;
+            transition: background 0.3s ease;
+        }
+
+        .btn-send:hover {
+            background: rgb(115, 40, 186);
+        }
+
+        footer {
+            background: rgb(193, 193, 227);
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer h3 {
+            color: blueviolet;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: rgb(19, 5, 64);
+        }
+
+        .aboutSection {
+            max-width: 80vw;
+            margin: 40px auto;
+        }
+
+        .aboutSection h2 {
+            font-size: 2rem;
+            color: rgb(19, 5, 64);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+        .skills h3 {
+            color: blueviolet;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: rgb(225, 225, 246);
+            color: rgb(19, 5, 64);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 2px solid rgb(193, 193, 227);
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: blueviolet;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .custom-btn {
+          background: blueviolet;
+         color: white;
+         border: none;
+         padding: 12px 25px;
+         border-radius: 25px;
+         font-size: 1rem;
+          cursor: pointer;
+          transition: 0.3s;
+          font-family: cursive;
+          
+        }
+
+        .custom-btn:hover {
+          background: rgb(115, 40, 186);
+        }
+
+
+    
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Akshita's Portfolio</div>
+            <div class="right">
+                <ul>
+                  <li><a href="#Home">Home</a></li>
+                 <li><a href="#About">About</a></li>
+                  <li><a href="#Project">Projects</a></li>
+                  <li><a href="#Contact Me">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <section class="firstSection" id="Home">
+
+    <div class="leftWrapper">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Akshita Sankhla</span>
+            <div> and I am a passionate </div>
+            <span id="element"></span>
+        </div>
+
+      
+        <button class="custom-btn">Hire Me</button>
+
+  
+
+        <p> B.Tech CSE (AI & ML) student passionate about building intelligent and creative digital experiences.
+            I blend technology, design, and innovation to solve real-world problems with clean, thoughtful solutions.</p>
+            
+        
+    </div>
+
+    <div class="rightSection">
+        <img src="image dev.png" alt style="width:90%; margin:50px;">
+    </div>
+
+</section>
+        </section>
+        <hr>
+
+        <section class="secondSection" id="About">
+           
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm Akshita Sankhla, a B.Tech Computer Science Engineering student specializing in AI & ML. I'm passionate about leveraging technology to create innovative solutions that make a real impact.</p>
+                
+                <p>My journey in tech has been driven by curiosity and a desire to blend creativity with technical expertise. From building deepfake detection systems to creating interactive gaming experiences, I thrive on challenges that push the boundaries of what's possible.</p>
+                
+                <p>I believe in continuous learning and exploring new technologies. Whether it's developing full-stack applications, experimenting with AI models, or designing user-centric interfaces, I approach every project with enthusiasm and dedication. I’m also passionate about drawing, painting, and digital art, which adds a creative touch to everything I build</p>
+
+                <div class="skills">
+                    <h3>Skills & Technology</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"> Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">AI & Machine learning</span>
+                        <span class="skill-tag">Tkinter</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection" id="Project">
+            <h2>Projects</h2>
+            <div class="secondSection">
+                
+               <div class="projectcard">
+                <img src="deepdefender.png" alt="DeepDefender" class="project-img">
+                <h3>DeepDefender</h3>
+                <p>AI-driven deepfake detection system designed to identify and prevent video manipulation.</p>
+                <div class="techstack">Python • AI/ML • Deep Learning</div>
+            </div>
+
+            <div class="projectcard">
+                <img src="typing.jpeg" alt="Typing Speed Game" class="project-img">
+                <h3>Typing Speed Test Game</h3>
+                <p>Interactive Tkinter-based game featuring real-time feedback, leaderboard, and theme customization.</p>
+                <div class="techstack">Python • Tkinter • GUI</div>
+            </div>
+
+            <div class="projectcard">
+                <img src="bluestock.png" alt="Bluestock Dashboard" class="project-img">
+                <h3>Bluestock Fintech IPO Dashboard</h3>
+                <p>Full-stack IPO web app with analytics, REST API, and chart visualization (internship project).</p>
+                <div class="techstack">React • Django • Node.js</div>
+            </div>
+
+                <div class="projectcard">
+                <img src="gmf.jpeg" alt="Gamified Therapy" class="project-img">
+                <h3>Gamified Cognitive Therapy Platform</h3>
+                <p>Concept platform to improve memory, problem-solving, and motor skills using gamification.</p>
+                <div class="techstack">•Python • UX Design • AI</div>
+            </div>   
+        </section>
+
+        <hr>
+
+        <section class="contactSection" id="Contact Me">
+            <h2>Let's Connect </h2>
+            <p class="contactintro">I'm open to freelance work, collaboration, and creative projects. Lets build something amazing!!</p>
+
+            <div class="contactinfo">
+                <p><strong>Email:</strong> sakshita.sankhla@gmail.com</p>
+                <p><strong>Github:</strong><a href="https://github.com/Akshita2208">Akshita2208</a></p>
+                <p><strong>Linkdin:</strong><a href="https://www.linkedin.com/in/akshita-sankhla-a18a81333/">akshita sankhla </a></p>
+                <p><strong>Phone:</strong>+91 9875878531</p>
+                <p><strong>Location:</strong>India</p>
+                
+            </div>
+        <form id="contact-form">
+          
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+        <div class="contact-form">
+            <div class="rightSection">
+        <img src="thanku_loop.gif" class="thankugif">
+        </div>
+      </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Akshita Sankhla</h3>
+        <p>© 2025 Akshita Sankhla. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: [' Developer', 'Designer','Innovator'],
+      typeSpeed: 50,
+      backSpeed:50,
+      loop:true
+    });
+  </script>
+</body>
+</html>
